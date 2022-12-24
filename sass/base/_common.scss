@@ -1,0 +1,47 @@
+body {
+    font-family: "Roboto", sans-serif;
+    color: $gray-color;
+    font-size: 14px;
+    background-color: $white-color;
+    letter-spacing: 0.03em;
+}
+
+.section {
+    padding: 94px 0;
+}
+
+.section-title {
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    color: var(--first-color);
+    margin-bottom: 50px;
+} 
+
+button {
+    cursor: pointer;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.list {
+    list-style-type: none;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.link:hover,
+.link:focus {
+    color: $accent-color;
+}
+
+:focus {
+    outline: 1px solid $accent-color;
+    border-radius: 4px;
+}

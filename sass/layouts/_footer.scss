@@ -1,0 +1,36 @@
+.footer {
+  background: $bkgr-color-footer;
+  padding: 60px 0;
+}
+
+.footer__container {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer__flex {
+  /* display: flex; */
+  min-width: 231px;
+}
+
+.footer__adress {
+  margin-top: 20px;
+}
+
+.footer__item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.footer__addres {
+  font-style: normal;
+  line-height: 1.71;
+  color: $white-color;
+  text-decoration: none;
+}
+
+.footer__mail-tel {
+  font-style: normal;
+  @include font(null, null, 1.71, null);
+  color: rgba(255, 255, 255, 0.6);
+}
+

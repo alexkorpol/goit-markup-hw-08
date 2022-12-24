@@ -1,2 +1,2 @@
-# goit-markup-hw-07
-SASS BEM
+# goit-markup-hw-08
+Adaptive (mobile-tablet-desktop)

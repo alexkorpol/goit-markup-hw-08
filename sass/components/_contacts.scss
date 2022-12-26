@@ -1,6 +1,9 @@
 .contact-list {
+  display: none;
+  @include tablet {
     display: flex;
     margin-left: auto;
+  }
 }
 
 .contact-list__item:not(:last-child) {

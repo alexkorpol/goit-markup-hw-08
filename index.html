@@ -22,6 +22,11 @@
     <div class="header__section container">
       <nav class="nav">
         <a href="./index.html" class="logo">Web<span class="logo_black">Studio</span></a>
+         <button class="mob-menu__btn js-open-menu" type="button">
+          <svg class="mob-menu__icon">
+            <use href="./images/icons.svg#icon-mob-button-menu"></use>
+          </svg>
+        </button>
         <ul class="nav__list list">
           <li class="nav__item nav__item_modify">
             <a class="nav__link_modify nav__link nav__link_padding" href="./index.html">Студія</a>
@@ -466,8 +471,38 @@
       </form>
     </div>
   </div>
+  <div class="nav-mobile js-menu-container">
+    <button class="nav-mobile__btn js-close-menu" type="button" >
+          <svg class="nav-mobile__icon">
+            <use href="./images/icons.svg#icon-close-mob-menu"></use>
+          </svg>
+        </button>
+        <ul class="list nav-mobile__list">
+            <li class="nav-mobile__container"><a class="nav-mobile__link  nav-mobile__current-page" href="./index.html">Студія</a></li>
+            <li class="nav-mobile__container"><a class="nav-mobile__link" href="./portfolio.html">Портфоліо</a></li>
+            <li><a class="nav-mobile__link" href="">Контакти</a></li>
+        </ul>
+        <div class="nav-mobile__block">
+            <ul class="ul nav-mobile__list-contact">
+                <li class="nav-mobile__container"><a class="nav-mobile__link-contact-tel " href="tel:+380961111111">+38
+                        096 111 11 11</a></li>
+                <li><a class="nav-mobile__link-contact-mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                </li>
+            </ul>
+             <ul class="ul nav-mobile__list-social">
+                <li><a class="nav-mobile__link-social" href="https://www.instagram.com/">instagram</a></li>
+                <img src="./images/Line.jpg" alt="лінія проміжку">
+                <li><a class="nav-mobile__link-social" href="https://twitter.com/">twitter</a></li>
+                <img src="./images/Line.jpg" alt="лінія проміжку">
+                <li><a class="nav-mobile__link-social" href="https://www.facebook.com/">facebook</a></li>
+                <img src="./images/Line.jpg" alt="лінія проміжку">
+                <li><a class="nav-mobile__link-social" href="https://www.linkedin.com/">linkedin</a></li>
+            </ul>
+
+  </div>
   </div>
   <script src="./js/modal.js"></script>
+  <script src="./js/mobile-menu.js"></script>
 </body>
 
 </html>

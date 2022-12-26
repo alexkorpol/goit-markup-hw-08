@@ -1,10 +1,22 @@
 .nav {
+//   display: flex;
+  align-items: center;
+
+  @media (max-width: 767px) {
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-between;
+  }
+  @include tablet {
     display: flex;
-    align-items: center;
+  }
 }
 
 .nav__list {
+  display: none;
+  @include tablet {
     display: flex;
+  }
 }
 
 .nav__item:not(:last-child) {

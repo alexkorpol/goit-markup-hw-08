@@ -1,0 +1,150 @@
+// кнопка меню для мобильного 
+.mob-menu__btn {
+  width: 40px;
+  height: 40px;
+  right: 0;
+  padding: 0;
+  border-radius: none;
+  border-style: hidden;
+  color: $first-color;
+  background-color: $white-color;
+  &:focus {
+    color: $accent-color;
+  }
+  @include tablet {
+    display: none;
+  }
+}
+
+.mob-menu__icon {
+  width: 100%;
+  height: 100%;
+  fill: currentColor;
+  &:focus {
+    fill: currentColor;
+  }
+}
+// конец кнопки
+
+.nav-mobile{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 48px 0 48px 40px;
+    background-color: #fff;
+    transform: translateX(100%);
+    transition: transform 250ms ease-in-out;
+    overflow-y: scroll;
+}
+@media(min-width:768px){
+    .nav-mobile{display: none;}
+}
+.nav-mobile.is-open {
+    transform: translateX(0);
+}
+.nav-mobile__btn{
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-top: 10px;
+    margin-right: 15px;
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 0;
+    background-color: #ffffff;
+    color: $main-text-color;
+    transition-property: background-color, color, box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+        color: $accent-color;
+        outline: 0;
+    }
+    
+}
+.nav-mobile__icon{
+    width: 18px;
+    height: 18px;
+    fill: currentColor;
+}
+
+.nav-mobile__container{
+    margin-bottom: 36px;
+}
+.nav-mobile__link{
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.2;
+    text-decoration: none;
+    letter-spacing: 0.02em;
+    color: $main-text-color;
+    transition-property: background-color, color, box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover, &:focus{
+        color: $accent-color;
+    }
+    @media(max-width:340px) {
+        font-size: 28px;
+    }
+}
+.nav-mobile__current-page{
+    color: $accent-color;
+}
+.nav-mobile__block{
+    position: absolute;
+    bottom: 48px;
+}
+.nav-mobile__link-contact-tel{
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1.1;
+    text-decoration: none;
+    letter-spacing: 0.02em;
+    color: $accent-color;
+    @media(max-width:340px){
+            font-size: 24px;
+    }
+}
+.nav-mobile__link-contact-mail {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.17;
+    text-decoration: none;
+    letter-spacing: 0.02em;
+    color: $text-color;
+    @media(max-width:340px) {
+            font-size: 14px;
+    
+        }
+}
+.nav-mobile__list-social{
+    margin-top: 64px;
+    display: flex;
+    gap: 10px;
+}
+.nav-mobile__line{
+    width: 22px;
+    height: 1px;
+}
+.nav-mobile__link-social{
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.2;
+    color: $accent-color;
+    @media(max-width:405px) {
+            font-size: 14px;
+        }
+    @media(max-width:340px) {
+        font-size: 11px;
+    }
+}
+
+
+
+// 32px 64 306 ^10 >15(40x40)

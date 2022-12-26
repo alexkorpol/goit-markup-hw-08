@@ -22,7 +22,10 @@
 
 
 .btn_padding-hero {
+  padding: 10px 24px;
+  @include desktop {
     padding: 10px 32px;
+  }
 }
 
 .btn_padding-modal {

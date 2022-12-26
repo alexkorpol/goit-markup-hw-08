@@ -1,14 +1,25 @@
 .logo {
   font-family: 'Raleway';
-  @include font(700, 26, 1.19, 0.03);
   color: $accent-color;
   text-decoration: none;
-  display: block;
+  @include font(700, 24, 1.17, 0.03);
+
+  @include desktop {
+    @include font(700, 26, 1.19, 0.03);
+    // display: block;
+  }
 }
 
 .logo_black {
   color: $black-color;
+  margin-right: 0;
+  @include tablet{
+    margin-right: 87px;
+  }
+  @include desktop{
   margin-right: 93px;
+  }
+ 
 }
 
 .logo_white {

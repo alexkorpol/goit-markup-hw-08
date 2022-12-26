@@ -1,5 +1,11 @@
 .container {
+  width: 450px;
+  padding: 0px 15px;
+  margin: 0 auto;
+  @include tablet {
+    width: 738px;
+  }
+  @include desktop {
     width: 1200px;
-    padding: 0px 15px;
-    margin: 0 auto;
+  }
 }

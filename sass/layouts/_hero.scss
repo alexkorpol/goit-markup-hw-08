@@ -1,26 +1,50 @@
 .hero {
-    
-    padding: 200px 0;
-    background-image: linear-gradient(to right,
-            rgba(47, 48, 58, 0.4),
-            rgba(47, 48, 58, 0.4)),
-        url(../images/img-background.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/img-background-mob.jpg);
+  max-width: 480px;
+  margin: 0 auto;
+  background-size: cover;
+  padding: 118px 0;
+  text-align: center;
+  background-position: center;
+
+  @include retina {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/img-background-mob-2x.jpg);
+  }
+
+  @include tablet {
+    max-width: 768px;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/img-background-tab.jpg);
+    @include retina {
+      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../images/img-background-tab-2x.jpg);
+    }
+  }
+
+  @include desktop {
     max-width: 1600px;
-    margin: 0 auto;
-    background-position: center;
-    background-color: #c4c4c4;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 200px 0;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/img-background.jpg);
+
+    @include retina {
+      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../images/img-background-2x.jpg);
+    }
+  }
 }
 
 .hero__title {
-    @include font(900, 44, 1.36, null);
-    text-align: center;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: $white-color;
+  @include font(900, 44, 1.36, null);
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: $white-color;
 
-    margin-bottom: 30px;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 696px;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 696px;
 }

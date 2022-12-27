@@ -1,16 +1,27 @@
 .team {
   background-color: $background-color;
-  &__list {
-    display: flex;
+}
+
+.team__list {
+  display: flex;
+  justify-content: center;
+}
+
+.team__list {
+  display: flex;
+  gap: 30px;
+
+  @media (max-width: 1199px) {
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: 1200px) {
     justify-content: center;
   }
 }
 
 .team__name {
   @include font(500, 16, 1.18, null);
-  // font-weight: 500;
-  // font-size: 16px;
-  // line-height: 1.18;
   text-align: center;
   color: $first-color;
 }
@@ -20,13 +31,17 @@
     0px 2px 1px rgb(0 0 0 / 20%);
   border-radius: 0px 0px 4px 4px;
   background-color: $white-color;
-  &:not(:last-child) {
-    margin-right: $margin-standart;
-  }
+  // &:not(:last-child) {
+  //   margin-right: $margin-standart;
+  // }
 }
 
 .team__name-work {
-  padding: 30px 0;
+  padding-top: 30px;
+  padding-bottom: 24px;
+  @include desktop {
+    padding: 30px 0;
+  }
 }
 
 .team__position {
@@ -65,7 +80,6 @@
     background-color: $accent-color;
   }
 }
-
 
 .team__icon {
   fill: currentColor;

@@ -1,25 +1,24 @@
 .btn {
-    background-color: $accent-color;
-    color: $white-color;
-    @include font(700, 16, 1.88, 0.06);
-    align-items: center;
-    text-align: center;
-    margin: 0 auto;
-    display: flex;
-    min-width: 200px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-    border: 1px solid transparent;
-    transition-property: background-color, color, box-shadow;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    &:hover,
-    &:focus {
-            background-color: #188ce8;
-            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-        }
+  background-color: $accent-color;
+  color: $white-color;
+  @include font(700, 16, 1.88, 0.06);
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+  display: flex;
+  min-width: 200px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: 1px solid transparent;
+  transition-property: background-color, color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background-color: #188ce8;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
 }
-
 
 .btn_padding-hero {
   padding: 10px 24px;
@@ -29,52 +28,26 @@
 }
 
 .btn_padding-modal {
-    padding: 10px 52px;
-}
-
-.subscribe__btn {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    min-width: 144px;
-    margin-left: 12px;
-    padding: 10px 28px;
-    @include font(700, 16, 1.87, 0.06);
-    color: $white-color;
-    background-color: $accent-color;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-    border-style: hidden;
-    transition-property: background-color, color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-    &:hover,
-    &:focus {
-    background-color: #188ce8;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-        // color: $first-color;
-        // background-color: $background-color;
-    }
+  padding: 10px 52px;
 }
 
 .btn-portfolio {
-    border-radius: 4px;
-    border: none;
-    font-family: 'Roboto';
-    @include font(500, 16, 1.85, 0.03);
-    text-align: center;
-    color: $first-color;
-    padding: 6px 22px;
-    transition-property: background-color, color, box-shadow;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 4px;
+  border: none;
+  font-family: 'Roboto';
+  @include font(500, 16, 1.85, 0.03);
+  text-align: center;
+  color: $first-color;
+  padding: 6px 22px;
+  transition-property: background-color, color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-    &:hover,
-    &:focus {
-        color: $white-color;
-        background-color: $accent-color;
-        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-            0px 2px 2px rgba(0, 0, 0, 0.12);
-    }
+  &:hover,
+  &:focus {
+    color: $white-color;
+    background-color: $accent-color;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
 }

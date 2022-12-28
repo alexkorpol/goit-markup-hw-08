@@ -15,11 +15,10 @@ body {
 
 .section-title {
   text-align: center;
-  color: var(--first-color);
-  @include tablet {
-    @include font(null, 28, 1.18, null);
-    margin-bottom: 30px;
-  }
+  color: $first-color;
+  @include font(null, 28, 1.18, null);
+  margin-bottom: 30px;
+
   @include desktop {
     @include font(null, 36, 1.16, null);
     margin-bottom: 50px;

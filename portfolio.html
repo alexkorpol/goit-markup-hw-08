@@ -24,41 +24,43 @@
 
   <body>
     <header class="header">
-      <div class="header__section container">
-        <nav class="nav">
-          <a href="./index.html" class="logo">Web<span class="logo_black">Studio</span></a>
-          <ul class="nav__list list">
-            <li class="nav__item">
-              <a class="nav__link nav__link_padding" href="./index.html">Студія</a>
-            </li>
-            <li class="nav__item nav__item_modify">
-              <a
-                class="nav__link  nav__link_padding nav__link_modify"
-                href="./portfolio.html"
-                >Портфоліо</a
-              >
-            </li>
-            <li class="nav__item">
-              <a class="nav__link nav__link_padding" href="">Контакти</a>
-            </li>
-          </ul>
-        </nav>
-        <ul class="contact-list list">
+    <div class="header__section container">
+      <nav class="nav">
+        <a href="./index.html" class="logo">Web<span class="logo_black">Studio</span></a>
+        <button class="mob-menu__btn js-open-menu" aria-expanded="false"
+          aria-controls="mobile-menu">
+          <svg class="mob-menu__icon">
+            <use href="./images/icons.svg#icon-mob-button-menu"></use>
+          </svg>
+        </button>
+        <ul class="nav__list list">
+          <li class="nav__item nav__item_modify">
+            <a class="nav__link_modify nav__link nav__link_padding" href="./index.html">Студія</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link nav__link_padding" href="./portfolio.html">Портфоліо</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link nav__link_padding" href="">Контакти</a>
+          </li>
+        </ul>
+      </nav>
+      <ul class="contact-list list">
         <li class="contact-list__item">
-          <a href="mailto:info@devstudio.com" class="contact-list__mail-tel nav__link nav__link_padding">
-            <svg class="contact-list__icon">
+          <a href="mailto:info@devstudio.com" class="contact-list__mail-tel nav__link ">
+            <svg class="contact-list__icon contact-list__icon-size-email">
               <use href="./images/icons.svg#icon-envelope"></use>
             </svg>info@devstudio.com</a>
         </li>
         <li class="contact-list__item">
-          <a href="tel:+380961111111" class="contact-list__mail-tel nav__link nav__link_padding"><svg class="contact-list__icon">
+          <a href="tel:+380961111111" class="contact-list__mail-tel nav__link "><svg
+              class="contact-list__icon contact-list__icon-size-tel">
               <use href="./images/icons.svg#icon-smartphone"></use>
             </svg>+38 096 111 11 11</a>
         </li>
       </ul>
-      </div>
-    </header>
-
+    </div>
+  </header>
     <main>
       <section class="portfolio section">
         <div class="container">

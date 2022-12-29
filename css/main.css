@@ -654,13 +654,25 @@ label.modal__politic-label {
 }
 @media screen and (min-width: 768px) {
   .contact-list {
-    display: flex;
+    display: block;
     margin-left: auto;
   }
 }
+@media screen and (min-width: 1200px) {
+  .contact-list {
+    display: flex;
+  }
+}
 
-.contact-list__item:not(:last-child) {
-  margin-right: 50px;
+@media screen and (min-width: 768px) {
+  .contact-list__item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contact-list__item:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .contact-list__mail-tel {
@@ -674,11 +686,52 @@ label.modal__politic-label {
   align-items: center;
 }
 
-.contact-list__icon {
+@media screen and (min-width: 1200px) {
+  .contact-list__item {
+    padding: 32px 0;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .contact-list {
+    padding: 21px 0;
+  }
+}
+
+.contact-list__icon-size-email {
   fill: currentColor;
-  width: 16px;
-  height: 12px;
-  margin-right: 10px;
+}
+@media screen and (min-width: 768px) {
+  .contact-list__icon-size-email {
+    width: 14px;
+    height: 10px;
+    margin-right: 8px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contact-list__icon-size-email {
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+  }
+}
+
+.contact-list__icon-size-tel {
+  fill: currentColor;
+}
+@media screen and (min-width: 768px) {
+  .contact-list__icon-size-tel {
+    width: 10px;
+    height: 14px;
+    margin-right: 8px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contact-list__icon-size-tel {
+    width: 10px;
+    height: 16px;
+    margin-right: 10px;
+  }
 }
 
 .header {

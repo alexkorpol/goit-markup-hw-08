@@ -54,35 +54,36 @@
             </svg>+38 096 111 11 11</a>
         </li>
       </ul>
-      <!-- mobile menu -->
-      <div class="mobile js-menu-container" id="mobile-menu">
+            <!-- mobile menu -->
+      <div class="mobile">
+      <div class="mobile__menu js-menu-container" id="mobile-menu">
         <button class="mobile__btn-close js-close-menu">
           <svg class="mobile__icon-open-close">
             <use href="./images/icons.svg#icon-close-mob-menu"></use>
           </svg>
         </button>
         <div>
-          <nav>
-            <ul class="mobile__list list">
-              <li class="mobile__item">
-                <a class="mobile__link link" href="./index.html">Студія</a>
-              </li>
-              <li class="mobile__item">
-                <a class="mobile__link link mobile__current-page" href="./portfolio.html">Портфоліо</a>
-              </li>
-              <li class="mobile__item"><a class="mobile__link link" href="">Контакти</a></li>
-            </ul>
-          </nav>
-          <div class="mobile__contact">
-            <ul class="mobile__list-contact list">
-              <li class="mobile__contact-item">
-                <a class="mobile__link-contact-tel link" href="tel:+380961111111">+38 096 111 11 11</a>
-              </li>
-              <li class="mobile__contact-item">
-                <a class="mobile__link-contact-mail link" href="mailto:info@devstudio.com">info@devstudio.com</a>
-              </li>
-            </ul>
-            <!-- соц-мережі -->
+        <nav>
+          <ul class="mobile__list list">
+            <li class="mobile__item">
+              <a class="mobile__link link" href="./index.html">Студія</a>
+            </li>
+            <li class="mobile__item">
+              <a class="mobile__link link mobile__current-page" href="./portfolio.html">Портфоліо</a>
+            </li>
+            <li class="mobile__item"><a class="mobile__link link" href="">Контакти</a></li>
+          </ul>
+        </nav>
+        <div class="mobile__contact">
+          <ul class="mobile__list-contact list">
+            <li class="mobile__contact-item">
+              <a class="mobile__link-contact-tel link" href="tel:+380961111111">+38 096 111 11 11</a>
+            </li>
+            <li class="mobile__contact-item">
+              <a class="mobile__link-contact-mail link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            </li>
+          </ul>
+          <!-- соц-мережі -->
             <ul class="mobile-socmedia list">
               <li class="mobile-socmedia__item">
                 <a href="" class="mobile-socmedia__link link">Instagram</a><span class="mobile-divide"></span>
@@ -97,8 +98,9 @@
                 <a href="" class="mobile-socmedia__link link">LinkedIn</a>
               </li>
             </ul>
-          </div>
         </div>
+        </div>
+      </div>
       </div>
   </header>
   <main>
@@ -113,7 +115,7 @@
           <li><button class="btn-portfolio" type="button">Маркетинг</button></li>
         </ul>
 
-        <ul class="list portfolio__picters">
+        <ul class="list portfolio__picters-list">
           <li class="portfolio__item">
             <div class="overlay">
               <div class="overlay__box">
@@ -123,7 +125,23 @@
                   отримати вичерпні відомості про компанію чи приватну особу.
                 </p>
               </div>
-              <img class="img-of-job" src="./images/tehno.jpg" width="370" alt="photo tehno" />
+              <!-- <img class="img-of-job" src="./images/tehno.jpg" width="370" alt="tehno.jpg" /> -->
+              <picture>
+                    <source
+                      srcset="./images/tehno.jpg 1x, ./images/tehno-2x.jpg 2x"
+                      media="(min-width:1200px)" />
+                    <source
+                      srcset="./images/tehno-tab.jpg 1x, ./images/tehno-tab-2x.jpg 2x"
+                      media="(min-width:768px)" />
+                    <source
+                      srcset="./images/tehno-mob.jpg 1x, ./images/tehno-mob-2x.jpg 2x"
+                      media="(min-width:480px)" />
+                    <img
+                      srcset="./images/tehno.jpg 1x, ./images/tehno-2x.jpg 2x"
+                      src="./images/tehno.jpg"
+                      alt="photo tehno"
+                      width="370"
+                  /></picture>
             </div>
             <div class="under-pict-border">
               <h2 class="project-title">Технокряк</h2>
@@ -139,7 +157,23 @@
                   отримати вичерпні відомості про компанію чи приватну особу.
                 </p>
               </div>
-              <img class="img-of-job" src="./images/poster.jpg" width="370" alt="photo poster" />
+              <!-- <img class="img-of-job" src="./images/poster.jpg" width="370" alt="photo poster" /> -->
+              <picture>
+                    <source
+                      srcset="./images/poster.jpg 1x, ./images/poster-2x.jpg 2x"
+                      media="(min-width:1200px)" />
+                    <source
+                      srcset="./images/poster-tab.jpg 1x, ./images/poster-tab-2x.jpg 2x"
+                      media="(min-width:768px)" />
+                    <source
+                      srcset="./images/poster-mob.jpg 1x, ./images/poster-mob-2x.jpg 2x"
+                      media="(min-width:480px)" />
+                    <img
+                      srcset="./images/poster.jpg 1x, ./images/poster-2x.jpg 2x"
+                      src="./images/poster.jpg"
+                      alt="photo poster"
+                      width="370"
+                  /></picture>
             </div>
             <div class="under-pict-border">
               <h2 class="project-title">Постер New Orlean vs Golden Star</h2>
@@ -155,7 +189,23 @@
                   отримати вичерпні відомості про компанію чи приватну особу.
                 </p>
               </div>
-              <img class="img-of-job" src="./images/restaurant.jpg" width="370" alt="photo restaurant" />
+              <!-- <img class="img-of-job" src="./images/restaurant.jpg" width="370" alt="photo restaurant" /> -->
+              <picture>
+                    <source
+                      srcset="./images/restaurant.jpg 1x, ./images/restaurant-2x.jpg 2x"
+                      media="(min-width:1200px)" />
+                    <source
+                      srcset="./images/restaurant-tab.jpg 1x, ./images/restaurant-tab-2x.jpg 2x"
+                      media="(min-width:768px)" />
+                    <source
+                      srcset="./images/restaurant-mob.jpg 1x, ./images/restaurant-mob-2x.jpg 2x"
+                      media="(min-width:480px)" />
+                    <img
+                      srcset="./images/restaurant.jpg 1x, ./images/restaurant-2x.jpg 2x"
+                      src="./images/restaurant.jpg"
+                      alt="photo restaurant"
+                      width="370"
+                  /></picture>
             </div>
             <div class="under-pict-border">
               <h2 class="project-title">Ресторан Seafood</h2>
@@ -171,7 +221,23 @@
                   отримати вичерпні відомості про компанію чи приватну особу.
                 </p>
               </div>
-              <img class="img-of-job" src="./images/project-prime.jpg" width="370" alt="photo prime" />
+              <!-- <img class="img-of-job" src="./images/project-prime.jpg" width="370" alt="photo prime" /> -->
+              <picture>
+                    <source
+                      srcset="./images/project-prime.jpg 1x, ./images/project-prime-2x.jpg 2x"
+                      media="(min-width:1200px)" />
+                    <source
+                      srcset="./images/project-prime-tab.jpg 1x, ./images/project-prime-tab-2x.jpg 2x"
+                      media="(min-width:768px)" />
+                    <source
+                      srcset="./images/project-prime-mob.jpg 1x, ./images/project-prime-mob-2x.jpg 2x"
+                      media="(min-width:480px)" />
+                    <img
+                      srcset="./images/project-prime.jpg 1x, ./images/project-prime-2x.jpg 2x"
+                      src="./images/poster.jpg"
+                      alt="photo prime"
+                      width="370"
+                  /></picture>
             </div>
             <div class="under-pict-border">
               <h2 class="project-title">Проєкт Prime</h2>
@@ -187,7 +253,23 @@
                   отримати вичерпні відомості про компанію чи приватну особу.
                 </p>
               </div>
-              <img src="./images/project-boxes.jpg" width="370" alt="photo project boxes" />
+              <!-- <img src="./images/project-boxes.jpg" width="370" alt="photo project boxes" /> -->
+              <picture>
+                    <source
+                      srcset="./images/project-boxes.jpg 1x, ./images/project-boxes-2x.jpg 2x"
+                      media="(min-width:1200px)" />
+                    <source
+                      srcset="./images/project-boxes-tab.jpg 1x, ./images/project-boxes-tab-2x.jpg 2x"
+                      media="(min-width:768px)" />
+                    <source
+                      srcset="./images/project-boxes-mob.jpg 1x, ./images/project-boxes-mob-2x.jpg 2x"
+                      media="(min-width:480px)" />
+                    <img
+                      srcset="./images/project-boxes.jpg 1x, ./images/project-boxes-2x.jpg 2x"
+                      src="./images/project-boxes.jpg"
+                      alt="photo project-boxes"
+                      width="370"
+                  /></picture>
             </div>
             <div class="under-pict-border">
               <h2 class="project-title">Проєкт Boxes</h2>
@@ -203,7 +285,23 @@
                   отримати вичерпні відомості про компанію чи приватну особу.
                 </p>
               </div>
-              <img src="./images/inspiration-has-no-borders.jpg" width="370" alt="photo inspiration has no borders" />
+              <!-- <img src="./images/inspiration-has-no-borders.jpg" width="370" alt="photo inspiration has no borders" /> -->
+              <picture>
+                    <source
+                      srcset="./images/inspiration-has-no-borders.jpg 1x, ./images/inspiration-has-no-borders-2x.jpg 2x"
+                      media="(min-width:1200px)" />
+                    <source
+                      srcset="./images/inspiration-has-no-borders-tab.jpg 1x, ./images/inspiration-has-no-borders-tab-2x.jpg 2x"
+                      media="(min-width:768px)" />
+                    <source
+                      srcset="./images/inspiration-has-no-borders-mob.jpg 1x, ./images/inspiration-has-no-borders-mob-2x.jpg 2x"
+                      media="(min-width:480px)" />
+                    <img
+                      srcset="./images/inspiration-has-no-borders.jpg 1x, ./images/inspiration-has-no-borders-2x.jpg 2x"
+                      src="./images/inspiration-has-no-borders.jpg"
+                      alt="photo inspiration has no borders"
+                      width="370"
+                  /></picture>
             </div>
             <div class="under-pict-border">
               <h2 class="project-title">Inspiration has no Borders</h2>
@@ -219,7 +317,23 @@
                   отримати вичерпні відомості про компанію чи приватну особу.
                 </p>
               </div>
-              <img class="img-of-job" src="./images/limited-edition.jpg" width="370" alt="photo limited edition" />
+              <!-- <img class="img-of-job" src="./images/limited-edition.jpg" width="370" alt="photo limited edition" /> -->
+              <picture>
+                    <source
+                      srcset="./images/limited-edition.jpg 1x, ./images/limited-edition-2x.jpg 2x"
+                      media="(min-width:1200px)" />
+                    <source
+                      srcset="./images/limited-edition-tab.jpg 1x, ./images/limited-edition-tab-2x.jpg 2x"
+                      media="(min-width:768px)" />
+                    <source
+                      srcset="./images/limited-edition-mob.jpg 1x, ./images/limited-edition-mob-2x.jpg 2x"
+                      media="(min-width:480px)" />
+                    <img
+                      srcset="./images/limited-edition.jpg 1x, ./images/limited-edition-2x.jpg 2x"
+                      src="./images/limited-edition.jpg"
+                      alt="photo limited edition"
+                      width="370"
+                  /></picture>
             </div>
             <div class="under-pict-border">
               <h2 class="project-title">Видання Limited Edition</h2>
@@ -235,7 +349,23 @@
                   отримати вичерпні відомості про компанію чи приватну особу.
                 </p>
               </div>
-              <img class="img-of-job" src="./images/lab.jpg" width="370" alt="photo lab" />
+              <!-- <img class="img-of-job" src="./images/lab.jpg" width="370" alt="photo lab" /> -->
+              <picture>
+                    <source
+                      srcset="./images/lab.jpg 1x, ./images/lab-2x.jpg 2x"
+                      media="(min-width:1200px)" />
+                    <source
+                      srcset="./images/lab-tab.jpg 1x, ./images/lab-tab-2x.jpg 2x"
+                      media="(min-width:768px)" />
+                    <source
+                      srcset="./images/lab-mob.jpg 1x, ./images/lab-mob-2x.jpg 2x"
+                      media="(min-width:480px)" />
+                    <img
+                      srcset="./images/lab.jpg 1x, ./images/lab-2x.jpg 2x"
+                      src="./images/lab.jpg"
+                      alt="photo lab"
+                      width="370"
+                  /></picture>
             </div>
             <div class="under-pict-border">
               <h2 class="project-title">Проєкт LAB</h2>
@@ -251,7 +381,23 @@
                   отримати вичерпні відомості про компанію чи приватну особу.
                 </p>
               </div>
-              <img class="img-of-job" src="./images/growing-business.jpg" width="370" alt="photo growing business" />
+              <!-- <img class="img-of-job" src="./images/growing-business.jpg" width="370" alt="photo growing business" /> -->
+              <picture>
+                    <source
+                      srcset="./images/growing-business.jpg 1x, ./images/growing-business-2x.jpg 2x"
+                      media="(min-width:1200px)" />
+                    <source
+                      srcset="./images/growing-business-tab.jpg 1x, ./images/growing-business-tab-2x.jpg 2x"
+                      media="(min-width:768px)" />
+                    <source
+                      srcset="./images/growing-business-mob.jpg 1x, ./images/growing-business-mob-2x.jpg 2x"
+                      media="(min-width:480px)" />
+                    <img
+                      srcset="./images/growing-business.jpg 1x, ./images/growing-business-2x.jpg 2x"
+                      src="./images/growing-business.jpg"
+                      alt="photo growing business"
+                      width="370"
+                  /></picture>
             </div>
             <div class="under-pict-border">
               <h2 class="project-title">Growing Business</h2>
@@ -263,53 +409,55 @@
     </section>
   </main>
 
-  <footer class="footer">
+ <footer class="footer">
     <div class="container footer__container">
-      <div class="footer__flex">
-        <a class="logo" href="./index.html">Web<span class="logo_white">Studio</span></a>
-        <address class="footer__adress">
-          <ul class="footer__list list">
-            <li class="footer__item">
-              <a class="footer__addres nav__link" href="https://goo.gl/maps/UtjV7vfehUhtQX6XA" target="_blank"
-                rel="noopener noreferrer nofollow">м. Київ, пр-т Лесі Українки, 26</a>
+      <div class="footer__mobile-tablet">
+        <div class="footer__flex">
+          <a class="logo" href="./index.html">Web<span class="logo_white">Studio</span></a>
+          <address class="footer__adress">
+            <ul class="footer__list list">
+              <li class="footer__item">
+                <a class="footer__addres nav__link" href="https://goo.gl/maps/UtjV7vfehUhtQX6XA" target="_blank"
+                  rel="noopener noreferrer nofollow">м. Київ, пр-т Лесі Українки, 26</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__mail-tel nav__link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__mail-tel nav__link" href="tel:+380961111111">+38 096 111 11 11</a>
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="join-wrapper">
+          <h3 class="join-wrapper__tittle">приєднуйтесь</h3>
+          <ul class="list join-wrapper__list">
+            <li class="join-wrapper__soc">
+              <a class="join-wrapper__soc-icon" href="">
+                <svg class="join-wrapper__icon">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg></a>
             </li>
-            <li class="footer__item">
-              <a class="footer__mail-tel nav__link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            <li class="join-wrapper__soc">
+              <a class="join-wrapper__soc-icon" href="https://twitter.com/" target="_blank">
+                <svg class="join-wrapper__icon">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg></a>
             </li>
-            <li class="footer__item">
-              <a class="footer__mail-tel nav__link" href="tel:+380961111111">+38 096 111 11 11</a>
+            <li class="join-wrapper__soc">
+              <a class="join-wrapper__soc-icon" href="">
+                <svg class="join-wrapper__icon">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg></a>
+            </li>
+            <li class="join-wrapper__soc">
+              <a class="join-wrapper__soc-icon" href="">
+                <svg class="join-wrapper__icon">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg></a>
             </li>
           </ul>
-        </address>
-      </div>
-      <div class="join-wrapper">
-        <h3 class="join-wrapper__tittle">приєднуйтесь</h3>
-        <ul class="list join-wrapper__list">
-          <li class="join-wrapper__soc">
-            <a class="join-wrapper__soc-icon" href="">
-              <svg class="join-wrapper__icon">
-                <use href="./images/icons.svg#icon-instagram"></use>
-              </svg></a>
-          </li>
-          <li class="join-wrapper__soc">
-            <a class="join-wrapper__soc-icon" href="https://twitter.com/" target="_blank">
-              <svg class="join-wrapper__icon">
-                <use href="./images/icons.svg#icon-twitter"></use>
-              </svg></a>
-          </li>
-          <li class="join-wrapper__soc">
-            <a class="join-wrapper__soc-icon" href="">
-              <svg class="join-wrapper__icon">
-                <use href="./images/icons.svg#icon-facebook"></use>
-              </svg></a>
-          </li>
-          <li class="join-wrapper__soc">
-            <a class="join-wrapper__soc-icon" href="">
-              <svg class="join-wrapper__icon">
-                <use href="./images/icons.svg#icon-linkedin"></use>
-              </svg></a>
-          </li>
-        </ul>
+        </div>
       </div>
       <div class="subscribe">
         <h3 class="subscribe__tittle">підпишіться на розсилку</h3>

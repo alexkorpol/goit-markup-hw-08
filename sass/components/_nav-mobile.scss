@@ -1,91 +1,106 @@
-// кнопка открытия мобильного меню
-.menu-btn {
-  width: 40px;
+// свойства кнопок открытия и  закрытия мобильного меню
+// .menu-btn {
+//   width: 40px;
+//   height: 40px;
+//   right: 0;
+//   padding: 0;
+//   border-radius: none;
+//   border-style: hidden;
+//   color: $first-color;
+//   background-color: $white-color;
+//   &:focus {
+//     color: $accent-color;
+//   }
+//   @include tablet {
+//     display: none;
+//   }
+// }
+
+.mobile__btn-open {
+  // position: absolute задаем для позиционирования 
+  // относительно родительского элемента
+  // position: absolute;
+  // top: 10px;
+  // right: 15px;
   height: 40px;
-  right: 0;
+  width: 40px;
+  // display: block;
+  // align-items: center;
+  // justify-content: center;
+
+  // margin: 0;
   padding: 0;
-  border-radius: none;
-  border-style: hidden;
-  color: $first-color;
-  background-color: $white-color;
+  background-color: transparent;
+  border: none;
+  fill: $first-color;
+
+  &:hover,
   &:focus {
-    color: $accent-color;
+    fill: $accent-color;
   }
+
   @include tablet {
     display: none;
   }
 }
 
-.mob-menu__icon {
+.mobile__btn-close{
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  top: 10px;
+  right: 15px;
+    padding: 0;
+  background-color: transparent;
+  border: none;
+  fill: $first-color;
+
+  &:hover,
+  &:focus {
+    fill: $accent-color;
+}
+}
+
+.mobile__icon-open-close {
   width: 100%;
   height: 100%;
   fill: currentColor;
   &:focus {
-    fill: currentColor;
+  fill: currentColor;
   }
 }
 
-.menu-container {
+.mobile {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
-  padding: 48px 0 48px 40px;
+  width: 100vw;
+  height: 100vh;
+  padding: 48px 40px;
   background-color: #fff;
   transform: translateX(100%);
   transition: transform 250ms ease-in-out;
   // overflow-y: scroll;
-  z-index: 999;
+  z-index: 1;
 }
 @media (min-width: 768px) {
-  .menu-container {
+  .mobile {
     display: none;
   }
 }
-.menu-container.is-open {
+.mobile.is-open {
   transform: translateX(0);
 }
 
-// кнопка закрытия мобильного меню
-.nav-mobile__btn {
-  position: absolute;
-  right: 0;
-  top: 0;
-  margin-top: 10px;
-  margin-right: 15px;
-  width: 40px;
-  height: 40px;
-  border: none;
-  border-radius: 0;
-  background-color: #ffffff;
-  color: $first-color;
-  transition-property: background-color, color, box-shadow;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  &:hover,
-  &:focus {
-    color: $accent-color;
-    outline: 0;
-  }
-}
-.nav-mobile__icon {
-  width: 18px;
-  height: 18px;
-  fill: currentColor;
-}
 
-.nav-mobile__container {
-  margin-bottom: 36px;
+
+.mobile__item:not(:last-child) {
+  margin-bottom: 32px;
 }
-.nav-mobile__link {
-  font-weight: 500;
-  font-size: 40px;
-  line-height: 1.2;
-  text-decoration: none;
-  letter-spacing: 0.02em;
+.mobile__link {
+  @include font(500, 40, 1.18, 0.02);
   color: $first-color;
-  transition-property: background-color, color, box-shadow;
+  transition-property:  color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
@@ -96,54 +111,57 @@
     font-size: 28px;
   }
 }
-.nav-mobile__current-page {
+.mobile__current-page {
   color: $accent-color;
 }
-.nav-mobile__block {
+.mobile__contact {
   position: absolute;
-  bottom: 48px;
+  bottom: 0px;
 }
-.nav-mobile__link-contact-tel {
-  font-weight: 500;
-  font-size: 34px;
-  line-height: 1.1;
-  text-decoration: none;
-  letter-spacing: 0.02em;
-  color: $accent-color;
-  @media (max-width: 340px) {
-    font-size: 24px;
+.mobile__list-contact {
+ margin-bottom: 64px;
+}
+.mobile__contact-item {
+  &:not(:last-child) {
+    margin-bottom: 32px;
   }
 }
-.nav-mobile__link-contact-mail {
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 1.17;
-  text-decoration: none;
-  letter-spacing: 0.02em;
-  color: $first-color;
-  @media (max-width: 340px) {
-    font-size: 14px;
-  }
+
+.mobile-socmedia{
+  margin-bottom: 0px;
 }
-.nav-mobile__list-social {
-  margin-top: 64px;
+.mobile__link-contact-tel {
+@include font(500, 34, 1.18, 0.02);
+  color: $accent-color;  
+}
+
+.mobile__link-contact-mail {
+  @include font(500, 24, 1.17, 0.02);
+  color: $gray-color;
+  
+}
+
+.mobile-socmedia {
   display: flex;
-  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 0px;
+  
 }
-.nav-mobile__line {
-  width: 22px;
-  height: 1px;
+
+.mobile-socmedia {
+  margin-bottom: 48px;
 }
-.nav-mobile__link-social {
-  text-decoration: none;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 1.2;
+
+.mobile-socmedia__link {
+  @include font(500, 18, 1.22, 0.02);
   color: $accent-color;
-  @media (max-width: 405px) {
-    font-size: 14px;
-  }
-  @media (max-width: 340px) {
-    font-size: 11px;
-  }
 }
+
+.mobile-divide {
+  margin: 0 10px;
+  height: 22px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  transform: rotate(90deg);
+}
+

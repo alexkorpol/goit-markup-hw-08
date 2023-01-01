@@ -6,4 +6,7 @@
 .header__section {
     display: flex;
   align-items: center;
+  min-height: 60px;
+  // задаем для позиционирования кнопки мобильного меню
+    // position: relative;
 }

@@ -351,13 +351,12 @@ img {
   border-radius: 4px;
   padding: 40px;
 }
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 479px) {
   .modal__window {
-    width: 450px;
-    height: 609px;
+    width: 95%;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 480px) {
   .modal__window {
     width: 450px;
     height: 609px;
@@ -407,14 +406,10 @@ img {
   margin-bottom: 12px;
   color: #212121;
   text-align: center;
-}
-@media screen and (min-width: 480px) {
-  .modal__heading {
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 1.5;
-    letter-spacing: 0.03em;
-  }
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
 }
 @media screen and (min-width: 1200px) {
   .modal__heading {
@@ -713,6 +708,7 @@ label.modal__politic-label {
 }
 @media screen and (min-width: 1200px) {
   .contact-list__item:not(:last-child) {
+    margin-bottom: 0;
     margin-right: 30px;
   }
 }
@@ -776,171 +772,152 @@ label.modal__politic-label {
   }
 }
 
-.menu-btn {
-  width: 40px;
+.mobile__btn-open {
   height: 40px;
-  right: 0;
+  width: 40px;
   padding: 0;
-  border-radius: none;
-  border-style: hidden;
-  color: #212121;
-  background-color: #ffffff;
+  background-color: transparent;
+  border: none;
+  fill: #212121;
 }
-.menu-btn:focus {
-  color: #2196f3;
+.mobile__btn-open:hover, .mobile__btn-open:focus {
+  fill: #2196f3;
 }
 @media screen and (min-width: 768px) {
-  .menu-btn {
+  .mobile__btn-open {
     display: none;
   }
 }
 
-.mob-menu__icon {
+.mobile__btn-close {
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  top: 10px;
+  right: 15px;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  fill: #212121;
+}
+.mobile__btn-close:hover, .mobile__btn-close:focus {
+  fill: #2196f3;
+}
+
+.mobile__icon-open-close {
   width: 100%;
   height: 100%;
   fill: currentColor;
 }
-.mob-menu__icon:focus {
+.mobile__icon-open-close:focus {
   fill: currentColor;
 }
 
-.menu-container {
+.mobile {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
-  padding: 48px 0 48px 40px;
+  width: 100vw;
+  height: 100vh;
+  padding: 48px 40px;
   background-color: #fff;
   transform: translateX(100%);
   transition: transform 250ms ease-in-out;
-  z-index: 999;
+  z-index: 1;
 }
 
 @media (min-width: 768px) {
-  .menu-container {
+  .mobile {
     display: none;
   }
 }
-.menu-container.is-open {
+.mobile.is-open {
   transform: translateX(0);
 }
 
-.nav-mobile__btn {
-  position: absolute;
-  right: 0;
-  top: 0;
-  margin-top: 10px;
-  margin-right: 15px;
-  width: 40px;
-  height: 40px;
-  border: none;
-  border-radius: 0;
-  background-color: #ffffff;
-  color: #212121;
-  transition-property: background-color, color, box-shadow;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.nav-mobile__btn:hover, .nav-mobile__btn:focus {
-  color: #2196f3;
-  outline: 0;
+.mobile__item:not(:last-child) {
+  margin-bottom: 32px;
 }
 
-.nav-mobile__icon {
-  width: 18px;
-  height: 18px;
-  fill: currentColor;
-}
-
-.nav-mobile__container {
-  margin-bottom: 36px;
-}
-
-.nav-mobile__link {
+.mobile__link {
   font-weight: 500;
   font-size: 40px;
-  line-height: 1.2;
-  text-decoration: none;
+  line-height: 1.18;
   letter-spacing: 0.02em;
   color: #212121;
-  transition-property: background-color, color, box-shadow;
+  transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.nav-mobile__link:hover, .nav-mobile__link:focus {
+.mobile__link:hover, .mobile__link:focus {
   color: #2196f3;
 }
 @media (max-width: 340px) {
-  .nav-mobile__link {
+  .mobile__link {
     font-size: 28px;
   }
 }
 
-.nav-mobile__current-page {
+.mobile__current-page {
   color: #2196f3;
 }
 
-.nav-mobile__block {
+.mobile__contact {
   position: absolute;
-  bottom: 48px;
+  bottom: 0px;
 }
 
-.nav-mobile__link-contact-tel {
+.mobile__list-contact {
+  margin-bottom: 64px;
+}
+
+.mobile__contact-item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.mobile-socmedia {
+  margin-bottom: 0px;
+}
+
+.mobile__link-contact-tel {
   font-weight: 500;
   font-size: 34px;
-  line-height: 1.1;
-  text-decoration: none;
+  line-height: 1.18;
   letter-spacing: 0.02em;
   color: #2196f3;
 }
-@media (max-width: 340px) {
-  .nav-mobile__link-contact-tel {
-    font-size: 24px;
-  }
-}
 
-.nav-mobile__link-contact-mail {
+.mobile__link-contact-mail {
   font-weight: 500;
   font-size: 24px;
   line-height: 1.17;
-  text-decoration: none;
   letter-spacing: 0.02em;
-  color: #212121;
-}
-@media (max-width: 340px) {
-  .nav-mobile__link-contact-mail {
-    font-size: 14px;
-  }
+  color: #757575;
 }
 
-.nav-mobile__list-social {
-  margin-top: 64px;
+.mobile-socmedia {
   display: flex;
-  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 0px;
 }
 
-.nav-mobile__line {
-  width: 22px;
-  height: 1px;
+.mobile-socmedia {
+  margin-bottom: 48px;
 }
 
-.nav-mobile__link-social {
-  text-decoration: none;
+.mobile-socmedia__link {
   font-weight: 500;
   font-size: 18px;
-  line-height: 1.2;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
   color: #2196f3;
 }
-@media (max-width: 405px) {
-  .nav-mobile__link-social {
-    font-size: 14px;
-  }
-}
-@media (max-width: 340px) {
-  .nav-mobile__link-social {
-    font-size: 11px;
-  }
+
+.mobile-divide {
+  margin: 0 10px;
+  height: 22px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  transform: rotate(90deg);
 }
 
 .header {
@@ -950,12 +927,15 @@ label.modal__politic-label {
 .header__section {
   display: flex;
   align-items: center;
+  min-height: 60px;
 }
 
 .hero {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  background-size: cover;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/img-background-mob.jpg);
-  max-width: 480px;
-  margin: 0 auto;
   background-size: cover;
   padding: 118px 0;
   text-align: center;
@@ -968,7 +948,6 @@ label.modal__politic-label {
 }
 @media screen and (min-width: 768px) {
   .hero {
-    max-width: 768px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/img-background-tab.jpg);
   }
 }
@@ -979,7 +958,6 @@ label.modal__politic-label {
 }
 @media screen and (min-width: 1200px) {
   .hero {
-    max-width: 1600px;
     padding: 200px 0;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/img-background.jpg);
   }

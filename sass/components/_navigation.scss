@@ -5,6 +5,8 @@
     width: 100%;
     display: inline-flex;
     justify-content: space-between;
+    // задаем для позиционирования кнопки мобильного меню
+    // position: relative;
   }
   @include tablet {
     display: flex;

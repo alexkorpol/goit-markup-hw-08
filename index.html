@@ -22,11 +22,9 @@
     <div class="header__section container">
       <nav class="nav">
         <a href="./index.html" class="logo">Web<span class="logo_black">Studio</span></a>
-        <button type="button" 
-        class="menu-btn js-open-menu" 
-        aria-expanded="false"
-        aria-controls="mobile-menu">
-          <svg class="mob-menu__icon">
+        <!-- button mobile menu -->
+        <button class="mobile__btn-open js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+          <svg class="mobile__icon-open-close">
             <use href="./images/icons.svg#icon-mob-button-menu"></use>
           </svg>
         </button>
@@ -56,7 +54,51 @@
             </svg>+38 096 111 11 11</a>
         </li>
       </ul>
-    </div>
+      <!-- mobile menu -->
+      <div class="mobile js-menu-container" id="mobile-menu">
+        <button class="mobile__btn-close js-close-menu">
+          <svg class="mobile__icon-open-close">
+            <use href="./images/icons.svg#icon-close-mob-menu"></use>
+          </svg>
+        </button>
+        <div>
+        <nav>
+          <ul class="mobile__list list">
+            <li class="mobile__item">
+              <a class="mobile__link link mobile__current-page" href="./index.html">Студія</a>
+            </li>
+            <li class="mobile__item">
+              <a class="mobile__link link" href="./portfolio.html">Портфоліо</a>
+            </li>
+            <li class="mobile__item"><a class="mobile__link link" href="">Контакти</a></li>
+          </ul>
+        </nav>
+        <div class="mobile__contact">
+          <ul class="mobile__list-contact list">
+            <li class="mobile__contact-item">
+              <a class="mobile__link-contact-tel link" href="tel:+380961111111">+38 096 111 11 11</a>
+            </li>
+            <li class="mobile__contact-item">
+              <a class="mobile__link-contact-mail link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            </li>
+          </ul>
+          <!-- соц-мережі -->
+            <ul class="mobile-socmedia list">
+              <li class="mobile-socmedia__item">
+                <a href="" class="mobile-socmedia__link link">Instagram</a><span class="mobile-divide"></span>
+              </li>
+              <li class="mobile-socmedia__item">
+                <a href="" class="mobile-socmedia__link link">Twitter</a><span class="mobile-divide"></span>
+              </li>
+              <li class="mobile-socmedia__item">
+                <a href="" class="mobile-socmedia__link link">Facebook</a><span class="mobile-divide"></span>
+              </li>
+              <li class="mobile-socmedia__item">
+                <a href="" class="mobile-socmedia__link link">LinkedIn</a>
+              </li>
+            </ul>
+        </div>
+      </div>
   </header>
 
   <main>
@@ -514,47 +556,14 @@
       </form>
     </div>
   </div>
-  <div class="menu-container js-menu-container" id="mobile-menu">
-      <button type="button" class="menu-btn js-close-menu" 
-          aria-expanded="false"
-          aria-controls="mobile-menu"
-          data-menu-close>
-        <svg class="nav-mobile__icon">
-          <use href="./images/icons.svg#icon-close-mob-menu"></use>
-        </svg>
-      </button>
-      <ul class="list nav-mobile__list">
-        <li class="nav-mobile__container">
-          <a class="nav-mobile__link nav-mobile__current" href="./index.html">Студія</a>
-        </li>
-        <li class="nav-mobile__container">
-          <a class="nav-mobile__link" href="./portfolio.html">Портфоліо</a>
-        </li>
-        <li><a class="nav-mobile__link" href="">Контакти</a></li>
-      </ul>
-      <div class="nav-mobile__block">
-        <ul class="ul nav-mobile__list-contact">
-          <li class="nav-mobile__container">
-            <a class="nav-mobile__link-contact-tel" href="tel:+380961111111">+38 096 111 11 11</a>
-          </li>
-          <li>
-            <a class="nav-mobile__link-contact-mail" href="mailto:info@devstudio.com"
-              >info@devstudio.com</a
-            >
-          </li>
-        </ul>
-        <!-- соц-мережі -->
-      </div>
-    </div>
-    <script
-      defer
-      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
-      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
-      crossorigin="anonymous">
+
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous">
     </script>
-    <script defer src=".js/mobile-menu.js">
-      
-    </script>
+  <script defer src=".js/mobile-menu.js">
+
+  </script>
   <script src="./js/modal.js"></script>
   <script src="./js/mobile-menu.js"></script>
 </body>

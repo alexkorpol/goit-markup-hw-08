@@ -85,7 +85,7 @@
   text-align: center;
   @include font(700, 20, 1.5, 0.03);
   @include desktop {
-  @include font(700, 20, 1.15, 0.03);
+    @include font(700, 20, 1.15, 0.03);
   }
 }
 
@@ -166,10 +166,7 @@
 label.modal__politic-label {
   display: flex;
   align-items: center;
-
-  @include tablet {
-    @include font(null, 12, 1.17, 0.03);
-  }
+  @include font(null, 12, 1.17, 0.03);
 
   @include desktop {
     @include font(null, null, 1.71, 0.03);

@@ -17,18 +17,18 @@
 }
 
 .mobile {
-background: #FFFFFF;
-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 
-0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+  background: #ffffff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08),
+    0px 1px 3px rgba(0, 0, 0, 0.16);
 }
 
-.mobile__btn-close{
+.mobile__btn-close {
   position: absolute;
   height: 40px;
   width: 40px;
   top: 10px;
   right: 15px;
-    padding: 0;
+  padding: 0;
   background-color: transparent;
   border: none;
   fill: $first-color;
@@ -36,7 +36,7 @@ box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04),
   &:hover,
   &:focus {
     fill: $accent-color;
-}
+  }
 }
 
 .mobile__icon-open-close {
@@ -44,14 +44,14 @@ box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04),
   height: 100%;
   fill: currentColor;
   &:focus {
-  fill: currentColor;
+    fill: currentColor;
   }
 }
 
 .mobile__menu {
   position: fixed;
   top: 0;
-  left: 0;
+  right: 0;
   width: 100vw;
   height: 100vh;
   padding: 48px 40px;
@@ -70,15 +70,13 @@ box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04),
   transform: translateX(0);
 }
 
-
-
 .mobile__item:not(:last-child) {
   margin-bottom: 32px;
 }
 .mobile__link {
   @include font(500, 40, 1.18, 0.02);
   color: $first-color;
-  transition-property:  color;
+  transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
@@ -97,7 +95,7 @@ box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04),
   bottom: 0px;
 }
 .mobile__list-contact {
- margin-bottom: 64px;
+  margin-bottom: 64px;
 }
 .mobile__contact-item {
   &:not(:last-child) {
@@ -105,25 +103,23 @@ box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04),
   }
 }
 
-.mobile-socmedia{
+.mobile-socmedia {
   margin-bottom: 0px;
 }
 .mobile__link-contact-tel {
-@include font(500, 34, 1.18, 0.02);
-  color: $accent-color;  
+  @include font(500, 34, 1.18, 0.02);
+  color: $accent-color;
 }
 
 .mobile__link-contact-mail {
   @include font(500, 24, 1.17, 0.02);
   color: $gray-color;
-  
 }
 
 .mobile-socmedia {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 0px;
-  
 }
 
 .mobile-socmedia {
@@ -142,4 +138,3 @@ box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04),
   border: 1px solid rgba(33, 33, 33, 0.2);
   transform: rotate(90deg);
 }
-

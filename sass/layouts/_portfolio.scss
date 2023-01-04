@@ -47,23 +47,6 @@
   }
 }
 
-//
-// flex-basis: calc((100% - 60px) / 3); Это было у меня
-
-// flex-basis: 100%;
-// margin-left: 30px;
-// margin-bottom: 30px;
-
-// background-color: var(--primary-bg-color);
-// border: 1px solid var(--border-works-color);
-
-// @include tablet {
-//   flex-basis: calc((100% - 60px) / 2);
-// }
-// @include desktop {
-//   flex-basis: calc((100% - 90px) / 3);
-// }
-
 .under-pict-border {
   // удаляем разницу под фото
   flex-grow: 1;

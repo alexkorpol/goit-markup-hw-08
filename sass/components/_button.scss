@@ -38,7 +38,7 @@
   @include font(500, 16, 1.85, 0.03);
   text-align: center;
   color: $first-color;
-  padding: 6px 22px;
+  padding: 6px 25px;
   transition-property: background-color, color, box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);

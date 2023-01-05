@@ -103,12 +103,12 @@
   }
 }
 
-.mobile-socmedia {
-  margin-bottom: 0px;
-}
 .mobile__link-contact-tel {
-  @include font(500, 34, 1.18, 0.02);
+  @include font(500, 29, 1.18, 0.02);
   color: $accent-color;
+  @include mobile {
+    @include font(500, 34, 1.18, 0.02);
+  }
 }
 
 .mobile__link-contact-mail {
@@ -124,6 +124,10 @@
 
 .mobile-socmedia {
   margin-bottom: 48px;
+  gap: 40px;
+  @include mobile {
+    gap: 0;
+  }
 }
 
 .mobile-socmedia__link {

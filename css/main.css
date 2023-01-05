@@ -159,7 +159,7 @@ img {
   letter-spacing: 0.03em;
   text-align: center;
   color: #212121;
-  padding: 6px 22px;
+  padding: 6px 25px;
   transition-property: background-color, color, box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -507,13 +507,14 @@ img {
 label.modal__politic-label {
   display: flex;
   align-items: center;
+  font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.03em;
 }
 @media screen and (min-width: 1200px) {
   label.modal__politic-label {
-    font-size: px;
+    font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
   }
@@ -524,8 +525,7 @@ label.modal__politic-label {
   height: 16px;
   border: 2px solid #212121;
   border-radius: 2px;
-  margin-left: 14px;
-  margin-right: 7px;
+  margin-right: 8px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -533,6 +533,11 @@ label.modal__politic-label {
 }
 .modal__icon-check svg {
   fill: transparent;
+}
+@media screen and (min-width: 1200px) {
+  .modal__icon-check {
+    margin-left: 12px;
+  }
 }
 
 .modal__politic-check:checked + label > span {
@@ -619,6 +624,7 @@ label.modal__politic-label {
 }
 
 .nav__link {
+  display: block;
   font-weight: 500;
   font-size: px;
   line-height: 1.14;
@@ -714,18 +720,6 @@ label.modal__politic-label {
   margin-left: auto;
   display: flex;
   align-items: center;
-}
-
-@media screen and (min-width: 1200px) {
-  .contact-list__item {
-    padding: 32px 0;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 1199px) {
-  .contact-list {
-    padding: 21px 0;
-  }
 }
 
 .contact-list__icon-size-email {
@@ -872,16 +866,20 @@ label.modal__politic-label {
   margin-bottom: 32px;
 }
 
-.mobile-socmedia {
-  margin-bottom: 0px;
-}
-
 .mobile__link-contact-tel {
   font-weight: 500;
-  font-size: 34px;
+  font-size: 29px;
   line-height: 1.18;
   letter-spacing: 0.02em;
   color: #2196f3;
+}
+@media screen and (min-width: 480px) {
+  .mobile__link-contact-tel {
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1.18;
+    letter-spacing: 0.02em;
+  }
 }
 
 .mobile__link-contact-mail {
@@ -900,6 +898,12 @@ label.modal__politic-label {
 
 .mobile-socmedia {
   margin-bottom: 48px;
+  gap: 40px;
+}
+@media screen and (min-width: 480px) {
+  .mobile-socmedia {
+    gap: 0;
+  }
 }
 
 .mobile-socmedia__link {
@@ -1297,7 +1301,6 @@ label.modal__politic-label {
        column-gap: 8px;
   display: flex;
   flex-wrap: wrap;
-  max-width: 326px;
   margin-bottom: 40px;
   justify-content: left;
 }

@@ -29,6 +29,7 @@
 }
 
 .nav__link {
+  display: block;
   @include font(500, null, 1.14, 0.02);
   color: $first-color;
   text-decoration: none;
